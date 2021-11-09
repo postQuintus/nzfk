@@ -13,13 +13,13 @@
 	//От кого письмо
 	$mail->setFrom('site@nzfk.ru', 'НЗФК');
 	//Кому отправить
-	$mail->addAddress('acidplus@gmail.com');
+	$mail->addAddress('acidplusru@gmail.com');
 	//Тема письма
 	$mail->Subject = 'Письмо с nzfk.ru';
 
 
 	//Тело письма
-	$body = '<h1>Ярик сосёт!</h1>';
+	$body = '<h2>Письмо с сайта</h2>';
 	
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
