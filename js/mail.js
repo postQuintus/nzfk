@@ -10,11 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		let error = formValidate(form);
 
 		let formData = new FormData(form);
-		formData.append('image', formFile.files[0]);
+		formData.append('image', formImage.files[0]);
 
 		if (error === 0) {
 			form.classList.add('_sending');
-
 			let response = await fetch('sendmail.php', {
 				method: 'POST',
 				body: formData
@@ -75,20 +74,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	//Получаем инпут file в переменную
-	const formFile = document.getElementById('formFile');
+	const formImage = document.getElementById('formImage');
 	//Получаем див для превью в переменную
 	const formPreview = document.getElementById('formPreview');
 
 	//Слушаем изменения в инпуте file
-	formFile.addEventListener('change', () => {
-		uploadFile(formFile.files[0]);
+	formImage.addEventListener('change', () => {
+		uploadFile(formImage.files[0]);
 	});
 
 	function uploadFile(file) {
 		// провераяем тип файла
 		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
 			alert('Разрешены только изображения.');
-			formFile.value = '';
+			formImage.value = '';
 			return;
 		}
 		// проверим размер файла (<2 Мб)
