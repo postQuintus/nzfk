@@ -12,23 +12,15 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-
   <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-
   <div class="site-wrap">
-
-
     <div class="container headings">
       <div class="row justify-content-between">
         <div data-aos="" class="site-logo col-xs-12 col-md-8">
-
           <div class="js-logo-clone"><a href="" class="img-logo"><img src="images/Logo NNOFK.png"></a></div>
           <a href="" class="logo-text">
             <div>нижегородский завод фосфорных кислот</div>
@@ -72,14 +64,12 @@
           </div>
           <div class="justify-content-between">
             <button class="btn btn-z scrollto"><a href="#two">Оставить заявку</a></button>
-
           </div>
         </div>
       </div>
     </div>
 
     <div class="site-blocks-cover">
-
       <div class="container radg-objects">
         <div class="radg-item fig2">
           <div data-aos="fade-right">
@@ -94,9 +84,7 @@
             </p>
           </div>
         </div>
-
       </div>
-
     </div>
 
 
@@ -155,7 +143,6 @@
                   <h4 class="gost">Воскресенск, ТУ 2121-341-00209438-04</h4>
                 </li>
                 <div class="item-price justify-content-between d-flex">
-
                   <li class="col-lg-7">
                     &nbsp;
                     <button class="btn">Подробнее</button>
@@ -193,8 +180,8 @@
         </div>
       </div>
     </div>
-    <form action="#" id="form" class="form__body">
-      <div id="two" class="forma site-blocks-cover scrollto">
+    <div class="forma site-blocks-cover scrollto">
+      <form action="#" id="form" class="form__body">
         <div class="container">
           <h1 data-aos="fade-right" class="h1x">Напишите нам</h1>
           <p data-aos="fade-right" class="sub-title">или позвоните по номеру <a href="tel:89092940713"
@@ -212,14 +199,15 @@
 
             <div class="forma-f row">
               <div class="wrap col-xs-12 col-md-12">
-                <textarea name="message" id="formMessage" class="uit-form__field uit-form__field--textarea"
+                <textarea id="formMessage" name="message" class="uit-form__field uit-form__field--textarea"
                   placeholder="Сообщение*"></textarea>
               </div>
             </div>
             <div class="forma-f row">
               <div class="wrap col-xs-12 col-md-12">
                 <label class="uit-form__attach uit-form__attach--white uit-form__attach--drop-style">
-                  <input id="formIamge" type="file" name="file" class="uit-form__attach-input">
+                  <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                    class="uit-form__attach-input">
                   <span class="uit-form__attach-content">
                     <span class="uit-form__attach-title">Прикрепить файл <i class="icon-attachment"></i></span>
                   </span>
@@ -230,8 +218,8 @@
               <div
                 class="uit-form__submit-info uit-form__submit-info--prefooter wrap wrap--font-medium col-xs-12 col-md-12">
                 <label class="custom-checkbox custom-checkbox--grey">
-                  <input type="checkbox" name="accepting" class="custom-checkbox__input accepting-checkbox" required=""
-                    checked="">
+                  <input id="formAgreement" type="checkbox" name="accepting"
+                    class="custom-checkbox__input accepting-checkbox" required="" checked="">
                   <span class="custom-checkbox__checkbox"></span><span class="custom-checkbox__label">
                     Я согласен с <a target="_blank" href="">политикой конфиденциальности и использования запрашиваемых
                       данных</a>
@@ -240,14 +228,12 @@
               </div>
             </div>
             <div class="forma-f row col-xs-12 col-md-6">
-              <p>
-                <button type="submit" class="d-flex btn btn-primary px-5 py-3">Отправить</button>
-              </p>
+              <button type="submit" class="d-flex btn btn-primary px-5 py-3">Отправить</button>
             </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -285,7 +271,7 @@
       </div>
     </footer>
   </div>
-
+  <script defer src="js/mail.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
@@ -293,10 +279,8 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/mail.js"></script>
   <script src="js/select.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>

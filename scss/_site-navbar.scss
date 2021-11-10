@@ -81,7 +81,7 @@
 	visibility: hidden;
 }
 
-.form__body.__sending::after {
+.form__body._sending::after {
 	opacity: 1;
 	visibility: visible;
 }
