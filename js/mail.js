@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
 			form.classList.add('_sending');
+
 			let response = await fetch('sendmail.php', {
 				method: 'POST',
 				body: formData
@@ -91,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			return;
 		}
 		// проверим размер файла (<2 Мб)
-		if (file.size > 2 * 1024 * 1024) {
-			alert('Файл должен быть менее 2 МБ.');
+		if (file.size > 10 * 1024 * 1024) {
+			alert('Файл должен быть менее 10 МБ.');
 			return;
 		}
 

@@ -66,6 +66,26 @@
 	/* background: linear-gradient(90deg,#ef8e38,#108dc7); */
 }
 
+.form__body {
+	position: relative;
+}
+.form__body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1d1d1d url(../images/loader.svg) center / 200px no-repeat;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.form__body.__sending::after {
+	opacity: 1;
+	visibility: visible;
+}
+
 .radg-objects > .container {
 	position: relative;
 }
