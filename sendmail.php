@@ -49,7 +49,7 @@
 	if (!$mail->send()) {
 		$message = 'Ошибка';
 	} else {
-		$message = 'Данные отправлены!';
+		$message = 'Соси член!';
 	}
 
 	$response = ['message' => $message];
