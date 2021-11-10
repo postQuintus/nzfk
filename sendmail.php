@@ -13,7 +13,7 @@
 	//От кого письмо
 	$mail->setFrom('site@nzfk.ru', 'НЗФК');
 	//Кому отправить
-	$mail->addAddress('acidplusru@gmail.com');
+	$mail->addAddress('info@nzfk.ru');
 	//Тема письма
 	$mail->Subject = 'Письмо с nzfk.ru';
 
