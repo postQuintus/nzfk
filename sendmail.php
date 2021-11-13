@@ -13,7 +13,7 @@
 	//От кого письмо
 	$mail->setFrom('site@nzfk.ru', 'НЗФК');
 	//Кому отправить
-	$mail->addAddress('bosschet123@mail.ru');
+	$mail->addAddress('info@nzfk.ru');
 	//Тема письма
 	$mail->Subject = 'Письмо с nzfk.ru';
 
@@ -49,7 +49,7 @@
 	if (!$mail->send()) {
 		$message = 'Ошибка';
 	} else {
-		$message = 'Соси член!';
+		$message = 'Сообщение отправлено!';
 	}
 
 	$response = ['message' => $message];
