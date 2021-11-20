@@ -867,3 +867,115 @@ $bg-gray: #f9f9f9;
 		color: $black;
 	}
 }
+.certificate-block {
+	padding-bottom: 3rem;
+	img {
+		width: auto;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+		transition: 0.3s;
+	}
+	img:hover,
+	img:focus {
+		outline: none;
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.288);
+	}
+}
+
+.certificate-header {
+	padding-bottom: 1rem;
+	padding-top: 2rem;
+	a {
+		color: black;
+		letter-spacing: 0;
+		font-weight: normal;
+		font-size: 1.5em;
+		position: relative;
+	}
+	> h4 {
+		font-size: 1em;
+	}
+}
+.certificate-header:after {
+	content: "";
+	position: absolute;
+	background: $primary;
+	height: 3px;
+	width: max-content;
+	bottom: 0;
+	left: 0;
+}
+.contacts-main {
+	padding-top: 2rem;
+}
+.contact-item {
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	h3 {
+		color: black;
+		font-size: 1.2rem;
+	}
+}
+.contact-map {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+	border-radius: 5px;
+}
+.contact-team-wrapper {
+	background: $white;
+	padding: 0 3rem;
+	border-radius: 5px;
+	margin-top: 3rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+	h1 {
+		font-size: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 0;
+		color: $secondary;
+	}
+}
+.contact-block {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	h4 {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 1.5em;
+		letter-spacing: 0;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		font-size: 1em;
+		margin: 0.1rem 0;
+	}
+}
+.contact-content {
+	padding-left: 20px;
+	position: relative;
+	&:before {
+		top: 0;
+		font-family: "icomoon";
+		content: "";
+		position: absolute;
+		left: 0;
+		font-size: 15px;
+
+		line-height: 1;
+		color: $primary;
+	}
+	&.address {
+		&:before {
+			content: "\e8b4";
+		}
+	}
+	&.email {
+		&:before {
+			content: "\f0e0";
+		}
+	}
+	&.phone {
+		&:before {
+			content: "\f095";
+		}
+	}
+}
